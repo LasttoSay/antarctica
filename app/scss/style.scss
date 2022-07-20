@@ -4,7 +4,122 @@
 @import 'global';
 @import 'libs';
 
+.header {
+  height: 100vh;
+  background-image: url(../images/headerImg/headerBg.jpg);
+  @extend %img;
 
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
 
+    &__list {
+      display: flex;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__link {
+      color: $defaultBright;
+      padding: 3px;
+      @extend %montserrat-500;
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    height: calc(100vh - 73px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__content-title {
+    font-size: 54px;
+    @extend %montserrat-700;
+    margin-bottom: 30px;
+  }
+
+  &__content-text {
+    font-size: 20px;
+  }
+}
+
+.travel {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: $defaultDark;
+  }
+
+  &__content {
+    max-width: 512px;
+  }
+
+  &__title {
+    color: #011C40;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    max-width: 560px;
+    max-height: 301px;
+  }
+}
+
+.benefits {
+  background-image: url(../images/benefits/benefitsBg.jpg);
+  @extend %img;
+  color: $defaultDark;
+
+  &__title {
+    @extend %montserrat-600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+  }
+
+  &__content-item{
+    background: #fff;
+    max-width: 360px;
+    padding: 30px;
+    align-self: stretch;
+  }
+
+  &__content-title{
+    font-size: 18px;
+    @extend %montserrat-500;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+  
+  &__content-title--liner-icon{
+    background-image: url(../images/benefits/icon1.png);
+  }
+  &__content-title--checked-icon{
+    background-image: url(../images/benefits/icon2.png);
+  }
+
+  &__content-title--boat-icon{
+    background-image: url(../images/benefits/icon3.png);
+  }
+
+}
 
 @import 'media';

@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: $defaultBright;
+  font-size: 14px;
+  line-height: 1.4;
+  @extend %montserrat-400;
+}
+
+main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+section{
+  padding: 120px;
+}
