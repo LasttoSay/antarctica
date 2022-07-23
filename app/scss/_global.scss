@@ -26,3 +26,10 @@ main{
 section{
   padding: 120px;
 }
+
+.menu__link {
+  color: $defaultBright;
+  padding: 3px;
+  @extend %montserrat-500;
+  font-size: 16px;
+}
