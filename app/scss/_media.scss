@@ -28,6 +28,23 @@
       width: 100%;
     }
   }
+
+  .booking {
+    &__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      font-size: 35px;
+    }
+
+  }
 }
 
 @media (max-width: 768px) {
@@ -49,7 +66,7 @@
     .menu {
       margin-top: 20px;
 
-      &.sticky{
+      &.sticky {
         justify-content: space-between;
       }
 
@@ -229,6 +246,25 @@
     &__content-item {
       max-width: 100%;
     }
+  }
+
+  .booking {
+
+    &__text {
+      font-size: 16px;
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    &__form {
+      padding: 30px;
+    }
+
   }
 
 }
