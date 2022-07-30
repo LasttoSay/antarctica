@@ -45,6 +45,27 @@
     }
 
   }
+
+  .footer {
+    .menu {
+     
+      &__link {
+        font-size: 12px;
+      }
+
+      &__item:not(:last-child) {
+        margin-right: 20px;
+      }
+
+    }
+
+    .social {
+      &__item:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -219,7 +240,7 @@
   }
 
   .location {
-   
+
     &__inner {
       justify-content: center;
       flex-direction: column-reverse;
@@ -233,6 +254,29 @@
 
     &__content {
       margin-bottom: 45px;
+    }
+  }
+
+  .footer{
+    .menu{
+      flex-direction: column;
+      &__list{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 30px;
+      }
+
+      &__item:not(:last-child) {
+        margin: 0 0 5px;
+      }
+
+      &__logo{
+        margin: 0 0 30px;
+      }
+
+      &__link {
+        font-size: 16px;
+      }
     }
   }
 

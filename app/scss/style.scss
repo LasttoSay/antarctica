@@ -31,7 +31,7 @@
       z-index: 1;
     }
 
-    &__logo{
+    &__logo {
       margin-right: 40px;
     }
 
@@ -42,7 +42,8 @@
     &__item:not(:last-child) {
       margin-right: 30px;
     }
-    &__responsive{
+
+    &__responsive {
       display: none;
     }
   }
@@ -339,8 +340,8 @@
     font-size: 16px;
   }
 
-  &__map{
-    width: 560px; 
+  &__map {
+    width: 560px;
     height: 300px;
     margin-right: 30px;
   }
@@ -391,44 +392,42 @@
 
 .footer {
   background: $defaultDark;
-  padding: 50px 0;
-
-  &__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  padding: 20px 0;
 
   .menu {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     &__list {
       display: flex;
       align-items: center;
+      margin-right: 20px;
     }
 
     &__logo{
-      margin-right: 40px;
+      margin-right: 20px;
     }
 
-    &__item:not(:last-child){
+    &__item:not(:last-child) {
       margin-right: 30px;
     }
   }
 
-  &__social{
+  .social {
     display: flex;
-    &-item:not(:last-child){
+
+    &__item:not(:last-child) {
       margin-right: 33px;
     }
-  
-    &-item{
-       width: 20px;
-       height: 20px;
+
+    &__item {
+      width: 20px;
+      height: 20px;
     }
-  
-    &-link{
+
+    &__link {
       display: block;
       width: 20px;
       height: 20px;
@@ -436,14 +435,16 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
-  
-    &-link--facebook{
+
+    &__link--facebook {
       background-image: url(../images/social/facebook.svg);
     }
-    &-link--instagram{
+
+    &__link--instagram {
       background-image: url(../images/social/instagram.svg);
     }
-    &-link--twitter{
+
+    &__link--twitter {
       background-image: url(../images/social/twitter.svg);
     }
   }
