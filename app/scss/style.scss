@@ -15,6 +15,26 @@
     align-items: center;
     margin-top: 25px;
 
+    &.sticky {
+      justify-content: space-around;
+      position: fixed;
+      padding: 15px 15px;
+      left: 0;
+      right: 0;
+      top: -25px;
+      background: #1d324ef7;
+      z-index: 1;
+    }
+
+    &.sticky .menu__logo {
+      position: relative;
+      z-index: 1;
+    }
+
+    &__logo{
+      margin-right: 40px;
+    }
+
     &__list {
       display: flex;
     }
@@ -23,7 +43,7 @@
       margin-right: 30px;
     }
     &__responsive{
-      visibility: hidden;
+      display: none;
     }
   }
 
@@ -32,6 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: $defaultDark;
   }
 
   &__content-title {
@@ -42,6 +63,7 @@
 
   &__content-text {
     font-size: 20px;
+    @extend %montserrat-600;
   }
 }
 
@@ -134,7 +156,8 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(4, 260px);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 260px);
     gap: 30px 30px;
   }
 

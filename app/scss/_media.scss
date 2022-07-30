@@ -13,10 +13,31 @@
       max-width: 440px;
     }
   }
+
+  .cruises {
+
+    &__list {
+      grid-template-columns: repeat(auto-fill, 310px);
+    }
+
+    &__item:hover .cruises__item-content {
+      padding: 35px 35px 0;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 768px) {
+
+  section {
+    padding: 100px 0;
+  }
+
   .header {
+
     &__content-title {
       font-size: 50px;
     }
@@ -28,8 +49,11 @@
     .menu {
       margin-top: 20px;
 
+      &.sticky{
+        justify-content: space-between;
+      }
+
       &__responsive {
-        visibility: visible;
         position: relative;
         display: flex;
         align-items: center;
@@ -84,8 +108,8 @@
       }
 
       &__list {
-        position: fixed;
-        top: 0;
+        position: absolute;
+        top: -20px;
         left: 0;
         right: 0;
         background: #1d324ef7;
@@ -138,14 +162,18 @@
         border-radius: 5px;
       }
 
+      &.active .menu__list {
+        transform: translateY(0);
+      }
+
       &.active .menu__logo {
         position: relative;
         z-index: 1;
       }
+    }
 
-      &.active .menu__list {
-        transform: translateY(0);
-      }
+    .menu.sticky+.header__content {
+      height: calc(100vh + 63px);
     }
   }
 
@@ -175,6 +203,11 @@
 }
 
 @media (max-width: 576px) {
+
+  section {
+    padding: 85px 0;
+  }
+
   .header {
 
     &__content {
@@ -195,6 +228,19 @@
   .benefits {
     &__content-item {
       max-width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 350px) {
+  .cruises {
+    &__list {
+      grid-template-columns: repeat(auto-fill, 100%);
+    }
+
+    &__item:hover .cruises__item-content {
+      padding: 35px 20px 0;
     }
   }
 }
