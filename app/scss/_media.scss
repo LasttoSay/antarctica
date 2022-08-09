@@ -48,7 +48,7 @@
 
   .footer {
     .menu {
-     
+
       &__link {
         font-size: 12px;
       }
@@ -190,6 +190,7 @@
       &__link {
         color: $defaultBright;
         font-size: 18px;
+        background: transparent;
         width: 100%;
         height: 100%;
         display: flex;
@@ -198,6 +199,11 @@
         position: relative;
         overflow: hidden;
         border-radius: 5px;
+      }
+
+      &__link:hover{
+        color: $defaultBright;
+        background: transparent;
       }
 
       &.active .menu__list {
@@ -257,20 +263,21 @@
     }
   }
 
-  .footer{
-    .menu{
+  .footer {
+    .menu {
       flex-direction: column;
-      &__list{
+
+      &__list {
         flex-direction: column;
         justify-content: center;
         margin: 0 0 30px;
       }
 
       &__item:not(:last-child) {
-        margin: 0 0 5px;
+        margin: 0 0 10px;
       }
 
-      &__logo{
+      &__logo {
         margin: 0 0 30px;
       }
 

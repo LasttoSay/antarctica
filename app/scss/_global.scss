@@ -3,7 +3,7 @@ body {
   height: 100%;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -13,17 +13,17 @@ body{
   @extend %montserrat-400;
 }
 
-main{
+main {
   flex-grow: 1;
 }
 
-.container{
+.container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-section{
+section {
   padding: 120px 0;
 }
 
@@ -32,4 +32,13 @@ section{
   padding: 3px;
   @extend %montserrat-500;
   font-size: 16px;
+}
+
+.btn{
+  transition: background 0.5s, color 0.5s;
+}
+
+.btn:hover {
+  background: #19235c;
+  color: #cc8fff;
 }
