@@ -204,6 +204,7 @@
       &__link:hover{
         color: $defaultBright;
         background: transparent;
+        border-radius: 5px;
       }
 
       &.active .menu__list {
